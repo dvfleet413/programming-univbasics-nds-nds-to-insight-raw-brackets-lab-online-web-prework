@@ -23,8 +23,8 @@ def directors_totals(nds)
   while row_index < directors_database.length do
     movie_index = 0
     while column_index < directors_database[row_index][:movies].length do
-     
-     column_index++ 
+      
+      column_index++ 
     end
     
     row_index += 1
