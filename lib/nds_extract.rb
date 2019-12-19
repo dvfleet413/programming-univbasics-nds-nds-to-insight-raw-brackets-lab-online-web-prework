@@ -20,10 +20,10 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   
   row_index = 0
+  movie_index = 0
+  total = 0
   while row_index < directors_database.length do
-    movie_index = 0
     while movie_index < directors_database[row_index][:movies].length do
-      total = 0
       total = total + directors_database[row_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1 
     end
