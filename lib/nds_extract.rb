@@ -31,5 +31,5 @@ def directors_totals(nds)
     row_index += 1
     total = 0
   end
-  puts result
+  result
 end
