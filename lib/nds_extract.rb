@@ -23,7 +23,9 @@ def directors_totals(nds)
   movie_index = 0
   
   while row_index < directors_database.length do
+  
     total = 0
+    
     #iterate through each row (director) and total the :worldwide_gross values
     while movie_index < directors_database[row_index][:movies].length do
       total = total + directors_database[row_index][:movies][movie_index][:worldwide_gross]
@@ -32,6 +34,8 @@ def directors_totals(nds)
     
     result[directors_database[row_index][:name]] = total
     row_index += 1
+    movie_index = 0
+    total = 0
   end
   result
 end
