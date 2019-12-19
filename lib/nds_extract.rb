@@ -34,6 +34,8 @@ def directors_totals(nds)
     
     result[directors_database[row_index][:name]] = total
     row_index += 1
+    
+    #result movie_index and total to be ready to iterate through next array of hashes (movies by specific director)
     movie_index = 0
     total = 0
   end
