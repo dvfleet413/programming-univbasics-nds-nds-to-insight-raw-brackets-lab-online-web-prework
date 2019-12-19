@@ -31,5 +31,4 @@ def directors_totals(nds)
     row_index += 1
   end
   nil
-  pp nds
 end
