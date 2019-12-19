@@ -28,7 +28,10 @@ def directors_totals(nds)
       puts total
       movie_index += 1 
     end
+    result[directors_database[row_index][:name]] = total
     row_index += 1
+    total = 0
   end
   nil
+  puts result
 end
